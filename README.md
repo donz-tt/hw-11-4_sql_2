@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "SQL. Часть 1" - Голиков Алексей
+# Домашнее задание к занятию "Расширенные возможности SQL" - Голиков Алексей
 
 ---
 
@@ -21,6 +21,7 @@ JOIN city c2 ON c2.city_id = a.city_id
 GROUP BY s.staff_id, c2.city_id
 HAVING COUNT(c.customer_id) > 300;
 ```
+
 ![Скриншот 1](https://github.com/donz-tt/hw-11-4_sql_2/blob/main/img/hw-11.4-1.jpg)
 
 ---
@@ -35,6 +36,7 @@ HAVING COUNT(c.customer_id) > 300;
 SELECT COUNT(film_id) AS films FROM film
 WHERE length > (select AVG(length) from film);
 ```
+
 ![Скриншот 2](https://github.com/donz-tt/hw-11-4_sql_2/blob/main/img/hw-11.4-2.jpg)
 
 ---
@@ -52,6 +54,7 @@ GROUP BY MONTH(payment_date)
 ORDER BY SUM(p.amount)
 DESC LIMIT 1;
 ```
+
 ![Скриншот 3](https://github.com/donz-tt/hw-11-4_sql_2/blob/main/img/hw-11.4-3.jpg)
 
 ---
